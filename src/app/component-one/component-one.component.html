@@ -1,0 +1,10 @@
+<button (click) = "buttonClick()">Display Details</button>
+
+<p [ngClass]="{dontDisplay: !display}">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae reiciendis ullam, 
+    iure corporis culpa doloremque rem dignissimos adipisci, repellendus eveniet iste, praesentium eaque minus. 
+    Expedita dolores assumenda eveniet culpa ad.</p>
+
+<p *ngFor="let action of actionArray; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}">Button Clicked</p>
+
+
+
